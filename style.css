@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+body {
+  font-size: 18px;
+  font-family: 'Barlow', sans-serif;
+}
+:root {
+  --Red: hsl(0, 100%, 68%);
+
+  --Very-Dark-Blue: hsl(230, 29%, 20%);
+  --Dark-Grayish-Blue: hsl(230, 11%, 40%);
+  --Grayish-Blue: hsl(231, 7%, 65%);
+  --Light-Grayish-Blue: hsl(207, 33%, 95%);
+}
+@media screen and (min-width: 360px) {
+  .nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2.4rem 2rem;
+  }
+  .logo-header {
+    width: 24px;
+    height: auto;
+  }
+  .img-logo-header {
+    width: 100%;
+    height: 100%;
+  }
+  .nav-links-header {
+    display: none;
+  }
+  .nav-links-header.show {
+    position: fixed;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1.5rem;
+    background-color: hsl(0, 0%, 100%);
+    list-style: none;
+    margin: 20rem 2rem 0rem 2rem;
+    padding: 1.5rem;
+    box-shadow: 0rem 0rem 0.5rem 0rem hsl(231, 7%, 65%);
+    border-radius: 0.2rem;
+  }
+  .link-header {
+    width: 100%;
+    text-align: center;
+  }
+  .link-header a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    color: hsl(230, 29%, 20%);
+    letter-spacing: 0.1rem;
+  }
+  .login-header {
+    border-top: 1px solid hsla(235, 7%, 65%, 0.329);
+    padding-top: 1.5rem;
+  }
+  .icon-menu-nav .icon-close {
+    display: none;
+  }
+  .icon-menu-nav.active .icon-close {
+    display: block;
+  }
+  .icon-menu-nav.active .icon-menu {
+    display: none;
+  }
+  /*_____home_____*/
+  .home {
+    margin: 3.5rem 0rem 0rem 2rem;
+    overflow: hidden;
+  }
+  .bg-img {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin-left: 11.9rem;
+    background-color: hsl(207, 33%, 95%);
+    width: 185px;
+    height: 425px;
+    border-bottom-left-radius: 4rem;
+    z-index: -1;
+  }
+  .img-home {
+    width: 504px;
+    height: auto;
+    margin-left: -1.4rem;
+    z-index: 2;
+  }
+  .text-home {
+    margin-top: 5rem;
+    font-family: 'Barlow Condensed', sans-serif;
+  }
+  .text-home .info-home span {
+    background-color: hsl(230, 29%, 20%);
+    text-transform: uppercase;
+    padding: 0.2rem 0.7rem;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 0.8rem;
+    color: hsl(207, 33%, 95%);
+    letter-spacing: 0rem;
+  }
+  .text-home .info-home {
+    display: flex;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 0.3rem;
+    gap: 1rem;
+    color: hsl(231, 7%, 65%);
+  }
+  .text-home .title-home {
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-top: 1rem;
+    line-height: 2.5rem;
+  }
+  .text-home .desc-home {
+    font-size: 22px;
+    margin-top: 1rem;
+    color: hsl(231, 7%, 65%);
+  }
+  .buttons-home {
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .buttons-home a {
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .btn-demo {
+    background-color: hsl(0, 100%, 68%);
+    padding: 0.7rem 1.4rem;
+    border-radius: 0.3rem;
+    color: hsl(207, 33%, 95%);
+    letter-spacing: 0.1rem;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .btn-preview {
+    font-size: 14px;
+    color: hsl(231, 7%, 65%);
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 4rem 8.4rem 4rem 10.3rem;
+  }
+  .logo-header {
+    width: 32px;
+    height: auto;
+  }
+  .img-logo-header {
+    width: 100%;
+    height: 100%;
+  }
+  .nav-links-header {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+  }
+  .link-header a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: hsl(230, 29%, 20%);
+    letter-spacing: 0.08rem;
+  }
+  .link-header a:hover {
+    text-decoration: 0.2rem underline;
+  }
+  .login-header {
+    list-style: circle;
+    padding: 0rem 2rem;
+    margin-left: 1.5rem;
+    border-top: none;
+  }
+  .login-header a {
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: hsl(231, 7%, 65%);
+    text-transform: uppercase;
+    letter-spacing: 0.08rem;
+  }
+  .login-header a:hover {
+    text-decoration: 0.2rem underline;
+  }
+
+  .icon-menu-nav {
+    display: none;
+  }
+  /*_____home_____*/
+  .home {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 7rem 0rem 0rem 10.3rem;
+    overflow: hidden;
+  }
+  .bg-img {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin-left: 47rem;
+    background-color: hsl(207, 33%, 95%);
+    width: 680px;
+    height: 425px;
+    border-bottom-left-radius: 4rem;
+    z-index: -1;
+  }
+  .img-home {
+    width: 940px;
+    height: auto;
+    margin-right: -16.5rem;
+    z-index: 2;
+  }
+  .text-home {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.8rem;
+    font-family: 'Barlow Condensed', sans-serif;
+  }
+  .text-home .info-home span {
+    background-color: hsl(230, 29%, 20%);
+    text-transform: uppercase;
+    padding: 0.2rem 0.7rem;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 0.8rem;
+    color: hsl(207, 33%, 95%);
+    letter-spacing: 0rem;
+  }
+  .text-home .info-home {
+    display: flex;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 0.3rem;
+    gap: 1rem;
+    color: hsl(231, 7%, 65%);
+  }
+  .text-home .title-home {
+    text-transform: uppercase;
+    font-size: 64px;
+    margin-top: 1.5rem;
+    line-height: 3.8rem;
+  }
+  .text-home .desc-home {
+    font-size: 22px;
+    margin-top: 2rem;
+    color: hsl(231, 7%, 65%);
+  }
+  .buttons-home {
+    margin-top: 3.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .buttons-home a {
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .btn-demo {
+    background-color: hsl(0, 100%, 68%);
+    padding: 1rem 1.8rem;
+    border-radius: 0.3rem;
+    color: hsl(207, 33%, 95%);
+    letter-spacing: 0.1rem;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .btn-demo:hover {
+    opacity: 0.8;
+  }
+  .btn-preview {
+    font-size: 16px;
+    color: hsl(231, 7%, 65%);
+    font-weight: 400;
+    letter-spacing: 0.3rem;
+  }
+}
